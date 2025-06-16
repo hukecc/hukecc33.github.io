@@ -1,16 +1,101 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>我的第一个网站</title>
-  <link rel="stylesheet" href="style.css">
+  <title>关于我 - hukecc</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fff6f6, #ffe9f1);
+      color: #333;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 30px 0;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      color: #d6336c;
+      margin-bottom: 10px;
+    }
+    .project {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #ffe1e8;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>你好，我是 hukecc！</h1>
-  <p>欢迎来到我的个人网站</p>
-  <button onclick="sayHi()">点我一下</button>
+  <header>
+    <h1>你好，我是 hukecc</h1>
+    <p>一个热爱创意项目与代码生活的开发者</p>
+  </header>
 
-  <script src="script.js"></script>
+  <div class="container">
+    <section>
+      <h2>关于我</h2>
+      <p>
+        我目前专注于智能硬件与嵌入式系统的开发，喜欢用技术解决生活中的小问题。
+        在过去的项目中，我设计了语音控制巡逻小车、环境监测模块以及一些网页交互应用。
+        我也在学习网页设计，希望能把技术和美学结合在一起。
+      </p>
+    </section>
+
+    <section>
+      <h2>项目合集</h2>
+
+      <div class="project">
+        <h3>🎙️ 智能语音巡逻小车</h3>
+        <p>基于 STM32 + 天问 ARS Pro 语音识别模块，实现语音控制、避障、循迹与蓝牙遥控。</p>
+      </div>
+
+      <div class="project">
+        <h3>🌡️ 环境监测显示系统</h3>
+        <p>通过 MQ135、DHT22 与 OLED 实现温湿度和空气质量显示与报警。</p>
+      </div>
+
+      <div class="project">
+        <h3>🌸 表白网页生成器</h3>
+        <p>一个浪漫的樱花飘落网页，集成诗句与背景音乐《告白气球》，支持 GitHub Pages 部署。</p>
+      </div>
+
+      <div class="project">
+        <h3>📄 个人简历网页</h3>
+        <p>用 HTML+CSS 制作的响应式简历页面，适合展示技术栈与项目经验。</p>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    © 2025 hukecc · 本页由爱与代码驱动构建
+  </footer>
 </body>
 </html>
